@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sistema de Estacionamento</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="container">
+        <h1>Controle de Estacionamento</h1>
+
+        <section>
+            <h2>Entrada de Veículo</h2>
+            <form id="formEntrada">
+                <input type="text" id="modeloEntrada" placeholder="Modelo" required />
+                <input type="text" id="placaEntrada" placeholder="Placa" required />
+                <button type="submit">Registrar Entrada</button>
+            </form>
+            <p id="resEntrada"></p>
+        </section>
+
+        <section>
+            <h2>Saída de Veículo</h2>
+            <form id="formSaida">
+                <input type="text" id="placaSaida" placeholder="Placa" required />
+                <button type="submit">Registrar Saída</button>
+            </form>
+            <p id="resSaida"></p>
+        </section>
+
+        <section>
+            <h2>Cancelar Registro</h2>
+            <form id="formExclusao">
+                <input type="text" id="placaExclusao" placeholder="Placa" required />
+                <button type="submit">Cancelar</button>
+            </form>
+            <p id="resExclusao"></p>
+        </section>
+
+        <section>
+            <h2>Verificar Presença</h2>
+            <form id="formVerificacao">
+                <input type="text" id="placaVerificacao" placeholder="Placa" required />
+                <button type="submit">Verificar</button>
+            </form>
+            <p id="resVerificacao"></p>
+        </section>
+
+        <section>
+            <h2>Tempo Estacionado</h2>
+            <form id="formTempo">
+                <input type="text" id="placaTempo" placeholder="Placa" required />
+                <button type="submit">Consultar Tempo</button>
+            </form>
+            <p id="resTempo"></p>
+        </section>
+
+        <section>
+            <h2>Atualizar Dados do Veículo</h2>
+            <form id="formAtualizar">
+                <input type="text" id="placaAtualizar" placeholder="Placa" required />
+                <input type="text" id="modeloAtualizar" placeholder="Novo Modelo" required />
+                <button type="submit">Atualizar</button>
+            </form>
+            <p id="resAtualizar"></p>
+        </section>
+
+        <section>
+            <h2>Veículos no Estacionamento</h2>
+            <form id="formAtivos">
+                <button type="submit">Listar Ativos</button>
+            </form>
+            <pre id="resAtivos"></pre>
+        </section>
+
+        <section>
+            <h2>Vagas Disponíveis</h2>
+            <form id="formVagas">
+                <button type="submit">Consultar Vagas</button>
+            </form>
+            <p id="resVagas"></p>
+        </section>
+
+        <section>
+            <h2>Relatório do Dia</h2>
+            <form id="formRelatorio">
+                <button type="submit">Gerar Relatório</button>
+            </form>
+            <pre id="resRelatorio"></pre>
+        </section>
+    </main>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
